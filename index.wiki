@@ -5,11 +5,9 @@
 == Programs ==
 * [[Vim]]
 * [[Git]]
-* [[LaTex]]
 
 == Science ==
-* [[Nlp]]
-* [[Tensorflow]]
+* [[nltk]]
 
 == Projects ==
 1. [[scrapy]]
