@@ -1,0 +1,4 @@
+= Latex =
+
+== TOC ==
+1. [[How to install latex on ubuntu?]]

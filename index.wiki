@@ -1,0 +1,17 @@
+= Knowledge =
+== Programming ==
+* [[Python]]
+
+== Programs ==
+* [[Vim]]
+* [[Git]]
+* [[LaTex]]
+
+== Science ==
+* [[Nlp]]
+* [[Tensorflow]]
+
+== Projects ==
+1. [[scrapy]]
+2. [[scrapy-rabbitmq]]
+3. [[scrapy-splash]]
