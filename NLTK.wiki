@@ -1,0 +1,31 @@
+= nltk =
+NLTK is a leading platform for building Python programs to 
+work with human language data. It provides easy-to-use in-
+faces to over 50 corpora(文集) and lexical(词典) resources
+surch as [[WordNet]], along with a suite of text processing 
+libraries for classifaction, tokenization([[分词]]), stemming, 
+tagging, parsing, and semantic reasoning, wrappers for 
+industrial-strength NLP libraries, and an active discussion
+forum.
+{{{
+import nltk
+sentence = """At eight o'clock on Thrsday morning
+Arthur didn't feel very goods."""
+"""
+# 获取所有的单词
+tokens = nltk.word_tokenize(sentence)
+print(tokens)
+print(tokens[0:6])
+
+# 命名实体识别
+entities = nltk.chunk.ne_chunk(tagged)
+print(entities)
+
+from nltk.corpus import treebank
+t = treebank.parsed_sents('wsj_0001.mrg')[0]
+t.draw()
+}}}
+
+
+*注释*
+* [[命名实体识别(Named EntitiesRecognition, NER)]]

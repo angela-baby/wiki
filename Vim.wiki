@@ -1,0 +1,3 @@
+= FAQ =
+* [[How to run a terminal inside of vim?]]
+* [[ConqueTerm]] -- Terminal plugin inside vim.

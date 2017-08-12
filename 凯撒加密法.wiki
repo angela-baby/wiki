@@ -1,0 +1,35 @@
+= 凯撒加密法 =
+* *程序代码*
+{{{
+message = 'This is my secret message'
+key = 13
+mode = 'encrypt'
+LEFTERS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+translated = ''
+message = message.upper()
+for symbol in message:
+    if symbol in LEFTERS:
+        num = LEFTERS.find(symbol)
+        if mode == 'encrypt':
+            num = num + key
+        elif mode == 'decrypt':
+            num = num - key
+
+        if num >= len(LEFTERS):
+            num = num - len(LEFTERS)
+        elif num < 0:
+            num = num + len(LEFTERS)
+
+        translated = translated + LEFTERS[num]
+    else:
+        translated = translated + symbol
+
+print(translated)
+}}}
+* *输出*
+{{{
+GUVF VF ZL FRPERG ZRFFNTR
+}}}
+
+= TODO =
+- [ ] 凯撒加密法不能加密非字母字符，比如是数字就不能加密
